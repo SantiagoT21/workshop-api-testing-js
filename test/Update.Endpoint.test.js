@@ -64,7 +64,6 @@ describe('Given the app API endpoins', () => {
 
     it('then consume POST Service', async () => {
       const response = await agent.post(`${urlBase}:${portBase}/${api}/quality`);
-
       expect(response.status).to.equal(statusCode.OK);
       expect(response.body[1].id).to.eql(itemID);
       expect(response.body[1].name).to.eql(updateJson.name);
