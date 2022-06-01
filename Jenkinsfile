@@ -19,9 +19,9 @@ pipeline {
                   allowMissing: false,
                   alwaysLinkToLastBuild: true,
                   keepAll: true,
-                  reportDir: 'cypress/reports',
+                  reportDir: 'reports',
                   reportFiles: 'report.html',
-                  reportName: 'HTML UI Frontend testing Report',
+                  reportName: 'API testing Report',
                   reportTitles: ''])
        }
     }
