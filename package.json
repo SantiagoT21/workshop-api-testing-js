@@ -4,7 +4,8 @@
   "description": "This is a Workshop about Api Testing in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint && mocha -t 5000 --reporter mochawesome --reporter-options reportDir=report,reportFilename=ApiTesting",
+    "pretest": "rm -rf report",
+    "test": "npm run lint && mocha --recursive -t 5000 --reporter mochawesome --reporter-options reportDir=report,reportFilename=ApiTesting",
     "lint": "eslint ./test/**/*.js"
   },
   "repository": {
