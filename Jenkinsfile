@@ -19,8 +19,8 @@ pipeline {
                   allowMissing: false,
                   alwaysLinkToLastBuild: true,
                   keepAll: true,
-                  reportDir: 'reports',
-                  reportFiles: 'report.html',
+                  reportDir: 'report',
+                  reportFiles: 'ApiTesting.html',
                   reportName: 'API testing Report',
                   reportTitles: ''])
        }
