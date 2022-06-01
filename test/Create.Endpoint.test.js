@@ -3,8 +3,8 @@ const chai = require('chai');
 
 const { expect } = chai;
 
-const urlBase = 'http://localhost';
-const portBase = '2432';
+const urlBase = process.env.APP_BASE_URL || 'http://localhost';
+const portBase = '8081';
 const api = 'api/items';
 
 describe('Given the app API endpoins', () => {
