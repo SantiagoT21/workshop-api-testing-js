@@ -2,7 +2,7 @@ const agent = require('superagent');
 const statusCode = require('http-status-codes');
 const { expect } = require('chai');
 
-const urlBase = process.env.APP_BASE_URL || 'http://localhost';
+const urlBase = 'https://api.github.com';
 const githubUserName = 'SantiagoT21';
 const repository = 'workshop-api-testing-js';
 
